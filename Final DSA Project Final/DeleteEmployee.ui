@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1178</width>
+    <height>861</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="ViewEmployeeBackButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>700</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>50</y>
+     <width>411</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+    color: rgb(85, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 6px;
+    border-radius: 6px;
+    padding: 10px;
+	background-color: yellow;
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Delete Employees</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Name">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>330</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial,sans-serif</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333; /* Dark gray text color */
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #666666; /* Dark gray border with 1-pixel width */
+    padding: 8px;
+}
+
+QLabel:hover {
+    background-color: #f0f0f0; /* Light gray background color on hover */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Enter ID of Employee: </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteEmployeeBtn">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>460</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+   color: black;
+    background-color: rgb(85, 255, 0); /* Darker Green on hover */
+}
+
+QPushButton:pressed {
+    background-color: #349438; /* Even darker Green when pressed */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Delete Employee</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>150</y>
+     <width>341</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView {
+    background-color: #e6e6e6; /* Set the background color of the table */
+    alternate-background-color: #d0d0d0; /* Set the background color of alternate rows */
+    gridline-color: #999; /* Set the color of grid lines */
+
+    selection-background-color: #3498db; /* Set the background color of selected items */
+    selection-color: #ffffff; /* Set the text color of selected items */
+
+    border: 2px solid #3498db; /* Set the border of the table */
+    border-radius: 8px; /* Set the border radius to make the corners rounded */
+}
+
+QHeaderView::section {
+    background-color: #2c3e50; /* Set the background color of header sections */
+    color: #ffffff; /* Set the text color of header sections */
+    padding: 6px; /* Add padding to header sections for better appearance */
+}
+
+QTableView::item {
+    padding: 8px; /* Add padding to table items for better appearance */
+}
+
+QTableView::item:selected {
+    background-color: #2980b9; /* Set the background color of selected items */
+    color: #ffffff; /* Set the text color of selected items */
+}
+
+QTableView::item:hover {
+    background-color: #ecf0f1; /* Set the background color when hovering over items */
+    color: #34495e; /* Set the text color when hovering over items */
+}
+</string>
+   </property>
+   <row>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string/>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLineEdit" name="IDTXT">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>330</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 2px 10px; /* Add some padding for better appearance */
+    background-color: #f2f2f2; /* Light gray background color */
+    selection-background-color: #ffa02f; /* Orange selection color */
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffa02f; /* Orange border when in focus */
+    box-shadow: 0 0 5px rgba(255, 160, 47, 0.7); /* Orange glow effect */
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>10</y>
+     <width>1181</width>
+     <height>851</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>pexels-fwstudio-129731.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>label_4</zorder>
+  <zorder>label</zorder>
+  <zorder>Name</zorder>
+  <zorder>tableWidget</zorder>
+  <zorder>deleteEmployeeBtn</zorder>
+  <zorder>ViewEmployeeBackButton</zorder>
+  <zorder>IDTXT</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

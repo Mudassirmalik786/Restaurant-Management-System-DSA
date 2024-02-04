@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addCustomer</class>
+ <widget class="QMainWindow" name="addCustomer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1222</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>40</y>
+      <width>411</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+    color: rgb(85, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 6px;
+    border-radius: 6px;
+    padding: 10px;
+	background-color: yellow;
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>View Food Menu</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteOrder">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>420</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+   color: black;
+    background-color: rgb(85, 255, 0); /* Darker Green on hover */
+}
+
+QPushButton:pressed {
+    background-color: #349438; /* Even darker Green when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Delete Order</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1211</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>brown.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LargePic">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>281</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+border: 6px solid rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>food.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="foodMenuTable">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>150</y>
+      <width>411</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    background-color: #f5f5f5;
+    alternate-background-color: #e0e0e0;
+    selection-background-color: #a6a6a6;
+    gridline-color: #d6d6d6;
+    border: 1px solid #d6d6d6;
+}
+
+QTableWidget::item {
+    padding: 5px;
+}
+
+QTableWidget::item:selected {
+    background-color: #4d90fe;
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #2c3e50;
+    color: white;
+    padding: 4px;
+    border: 1px solid #34495e;
+}
+
+QHeaderView::section:checked {
+    background-color: #3498db;
+}
+
+QHeaderView::section:pressed {
+    background-color: #2980b9;
+}
+
+QTableWidget::horizontalHeader {
+    border: 1px solid #d6d6d6;
+}
+
+QTableWidget::verticalHeader {
+    border: 1px solid #d6d6d6;
+}
+
+QTableWidget::horizontalHeader::section,
+QTableWidget::verticalHeader::section {
+    background-color: #2c3e50;
+    color: white;
+    border: 1px solid #34495e;
+}
+
+QScrollBar:vertical {
+    width: 10px;
+    border: 1px solid #d6d6d6;
+    background: #f5f5f5;
+}
+
+QScrollBar::handle:vertical {
+    background: #95a5a6;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: 1px solid #d6d6d6;
+    background: #f5f5f5;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: #ecf0f1;
+}
+
+</string>
+    </property>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Food Name</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Price</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Quantity</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>Pizza </string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>800</string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>Burger</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>200</string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>Biryani</string>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>300</string>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="orderButton">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>420</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+   color: black;
+    background-color: rgb(85, 255, 0); /* Darker Green on hover */
+}
+
+QPushButton:pressed {
+    background-color: #349438; /* Even darker Green when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Add to Order</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Name">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>180</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial,sans-serif</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333; /* Dark gray text color */
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #666666; /* Dark gray border with 1-pixel width */
+    padding: 8px;
+}
+
+QLabel:hover {
+    background-color: #f0f0f0; /* Light gray background color on hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Food:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Name_2">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>260</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial,sans-serif</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333; /* Dark gray text color */
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #666666; /* Dark gray border with 1-pixel width */
+    padding: 8px;
+}
+
+QLabel:hover {
+    background-color: #f0f0f0; /* Light gray background color on hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Qty:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="itemNameTXT">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>180</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit { border: 2px solid gray; border-radius: 10px; padding: 2px; }
+QLineEdit:focus { border: 2px solid blue; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="quantityTXT">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>260</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit { border: 2px solid gray; border-radius: 10px; padding: 2px; }
+QLineEdit:focus { border: 2px solid blue; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backBTN">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>560</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+   color: black;
+    background-color: rgb(85, 255, 0); /* Darker Green on hover */
+}
+
+QPushButton:pressed {
+    background-color: #349438; /* Even darker Green when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <zorder>label_3</zorder>
+   <zorder>label</zorder>
+   <zorder>deleteOrder</zorder>
+   <zorder>LargePic</zorder>
+   <zorder>foodMenuTable</zorder>
+   <zorder>orderButton</zorder>
+   <zorder>Name</zorder>
+   <zorder>Name_2</zorder>
+   <zorder>itemNameTXT</zorder>
+   <zorder>quantityTXT</zorder>
+   <zorder>backBTN</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1222</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

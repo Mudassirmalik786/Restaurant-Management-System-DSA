@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewOrder</class>
+ <widget class="QDialog" name="ViewOrder">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>741</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="ViewReviewsBackButton">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>520</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 255, 255);
+background-color: rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>20</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+    color: rgb(85, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 6px;
+    border-radius: 6px;
+    padding: 10px;
+	background-color: gold;
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>View Reviews</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>301</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+    border: 2px solid #555555;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>food.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>741</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 170, 127);</string>
+   </property>
+   <property name="text">
+    <string>         TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>110</y>
+     <width>371</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget {
+    background-color: rgb(170, 170, 255);
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+QListWidget::item {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+QListWidget::item:hover {
+    background-color: #fafafa;
+}
+
+QListWidget::item:selected {
+    background-color: #e0e0e0;
+}
+
+QListWidget::item:selected:!active {
+    color: #000000;
+}
+
+QListWidget::item:selected:active {
+    background-color: #d9d9d9;
+    border: 1px solid #c0c0c0;
+}
+
+QListWidget::item:selected:active:!focus {
+    border: 1px solid #b3b3b3;
+}
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Review 1</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Review 2</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+   </item>
+  </widget>
+  <zorder>label_3</zorder>
+  <zorder>ViewReviewsBackButton</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>listWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

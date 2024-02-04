@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminMenu</class>
+ <widget class="QMainWindow" name="AdminMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1144</width>
+    <height>762</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="AdminMenu_2">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>50</y>
+      <width>321</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI,Tahoma,Geneva,Verdana,sans-serif</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: rgb(85, 0, 0);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #ffffff;
+    border-radius: 39px;
+    padding: 10px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Admin Menu</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ChangePricesOFFood">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>210</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: purple;
+    border: solid #2980b9;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 19px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: yellow;
+color: black;
+font-weight: bold;
+}
+
+QPushButton:pressed {
+    background-color: #2c3e50;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Edit Food Menu</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EditEmployees">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>330</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: purple;
+    border: solid #2980b9;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 19px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: yellow;
+color: black;
+font-weight: bold;
+}
+
+QPushButton:pressed {
+    background-color: #2c3e50;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Add Employee</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ViewCusotmers">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>200</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: purple;
+    border: solid #2980b9;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 19px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: yellow;
+color: black;
+font-weight: bold;
+}
+
+QPushButton:pressed {
+    background-color: #2c3e50;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Edit Customers</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ViewReviews">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>460</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: purple;
+    border: solid #2980b9;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 19px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: yellow;
+color: black;
+font-weight: bold;
+}
+
+QPushButton:pressed {
+    background-color: #2c3e50;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>View Reviews</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>80</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>370</y>
+      <width>1031</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>C:/Users/hp/Downloads/pexels-pixabay-531880.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BackBTN">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>610</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: green;
+    border: solid #2980b9;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 19px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: red;
+ 
+}
+
+QPushButton:pressed {
+    background-color: #2c3e50;
+    border: 2px solid #2c3e50;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteEmployee">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>330</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: purple;
+    border: solid #2980b9;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 19px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: yellow;
+color: black;
+font-weight: bold;
+}
+
+QPushButton:pressed {
+    background-color: #2c3e50;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Delete Employee</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>1151</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>brooke-lark-08bOYnH_r_E-unsplash.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>label_3</zorder>
+   <zorder>AdminMenu_2</zorder>
+   <zorder>ChangePricesOFFood</zorder>
+   <zorder>EditEmployees</zorder>
+   <zorder>ViewCusotmers</zorder>
+   <zorder>ViewReviews</zorder>
+   <zorder>label_2</zorder>
+   <zorder>BackBTN</zorder>
+   <zorder>deleteEmployee</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1144</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

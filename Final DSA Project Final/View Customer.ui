@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addCustomer</class>
+ <widget class="QMainWindow" name="addCustomer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1142</width>
+    <height>728</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>371</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+    color: rgb(85, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 6px;
+    border-radius: 6px;
+   border: 2px solid white;
+    padding: 10px;
+	background-color: yellow;
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>View Customer Menu</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="customerTable">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>131</y>
+      <width>371</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>371</width>
+      <height>192</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    background-color: #f5f5f5; /* Light background color of the table */
+    alternate-background-color: #e0e0e0; /* Background color of alternate rows */
+    selection-background-color: #3498db; /* Background color of selected cells */
+    border: 2px solid #3498db; /* Border color of the table */
+}
+
+QTableWidget::item {
+    padding: 8px; /* Padding for each cell */
+}
+
+QTableWidget::item:selected {
+    color: #ffffff; /* Text color of selected cells */
+    background-color: #3498db; /* Background color of selected cells */
+}
+
+QHeaderView::section {
+    background-color: #3498db; /* Background color of header sections */
+    border: 1px solid #297fb8; /* Border color of header sections */
+    color: #ffffff; /* Text color of header sections */
+}
+
+QHeaderView::section:checked {
+    background-color: #297fb8; /* Background color of checked header sections */
+}
+
+QHeaderView::section:checked:disabled {
+    background-color: #a0a0a0; /* Background color of disabled checked header sections */
+}
+
+QHeaderView::section:unchecked {
+    background-color: #3498db; /* Background color of unchecked header sections */
+}
+
+QHeaderView::section:unchecked:disabled {
+    background-color: #a0a0a0; /* Background color of disabled unchecked header sections */
+}
+</string>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Password</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Total Bill </string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>Mudassir</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>123</string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>1000</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>Asad</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>112</string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>2000</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>Abdullah</string>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>2211</string>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>900</string>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="5" column="1">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="5" column="2">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="6" column="0">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="6" column="1">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="6" column="2">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="updateButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>480</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+   color: black;
+    background-color: rgb(85, 255, 0); /* Darker Green on hover */
+}
+
+QPushButton:pressed {
+    background-color: #349438; /* Even darker Green when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Update Customer</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>1151</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>red.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LargePic">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>281</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+border: 2px solid white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>pexels-rene-asmussen-1581384.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Name_3">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>350</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial,sans-serif</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333; /* Dark gray text color */
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #666666; /* Dark gray border with 1-pixel width */
+    padding: 8px;
+}
+
+QLabel:hover {
+    background-color: #f0f0f0; /* Light gray background color on hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Total Bill:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="userNameTxt">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>170</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit { border: 2px solid gray; border-radius: 10px; padding: 2px; }
+QLineEdit:focus { border: 2px solid blue; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="BillTXT">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>350</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit { border: 2px solid gray; border-radius: 10px; padding: 2px; }
+QLineEdit:focus { border: 2px solid blue; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Name">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>170</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial,sans-serif</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333; /* Dark gray text color */
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #666666; /* Dark gray border with 1-pixel width */
+    padding: 8px;
+}
+
+QLabel:hover {
+    background-color: #f0f0f0; /* Light gray background color on hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Name:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backBTN">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>480</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+   color: black;
+    background-color: rgb(85, 255, 0); /* Darker Green on hover */
+}
+
+QPushButton:pressed {
+    background-color: #349438; /* Even darker Green when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordTXT">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>260</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit { border: 2px solid gray; border-radius: 10px; padding: 2px; }
+QLineEdit:focus { border: 2px solid blue; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="passwordLBL">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>260</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial,sans-serif</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333; /* Dark gray text color */
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #666666; /* Dark gray border with 1-pixel width */
+    padding: 8px;
+}
+
+QLabel:hover {
+    background-color: #f0f0f0; /* Light gray background color on hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteButton">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>480</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+QPushButton:hover {
+   color: black;
+    background-color: rgb(85, 255, 0); /* Darker Green on hover */
+}
+
+QPushButton:pressed {
+    background-color: #349438; /* Even darker Green when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Delete Customer</string>
+    </property>
+   </widget>
+   <zorder>label_3</zorder>
+   <zorder>label</zorder>
+   <zorder>customerTable</zorder>
+   <zorder>updateButton</zorder>
+   <zorder>LargePic</zorder>
+   <zorder>Name_3</zorder>
+   <zorder>userNameTxt</zorder>
+   <zorder>BillTXT</zorder>
+   <zorder>Name</zorder>
+   <zorder>backBTN</zorder>
+   <zorder>passwordTXT</zorder>
+   <zorder>passwordLBL</zorder>
+   <zorder>deleteButton</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1142</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
